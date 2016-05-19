@@ -5,7 +5,9 @@
 var Help = function () 
 {
 var HelpZone = document.getElementById("HelpZone");
-HelpZone.style.display="block";				
+HelpZone.style.display="block";	
+var Chimie = document.getElementById("Chimie");
+Chimie.style.display="none";
 var Tab = document.getElementById("Tableau");
 Tab.style.display= "none";						
 }
@@ -16,11 +18,8 @@ var HelpZone = document.getElementById("HelpZone");
 HelpZone.style.display="none";				
 var Tab = document.getElementById("Tableau");
 Tab.style.display= "block";
-
 var Chimie = document.getElementById("Chimie");
 Chimie.style.display="none";
-var Tab = document.getElementById("Tableau");
-Tab.style.display= "block";
 }
 
 var Aidechimie = function ()
@@ -29,6 +28,8 @@ var Chimie = document.getElementById("Chimie");
 Chimie.style.display="block";
 var Tab = document.getElementById("Tableau");
 Tab.style.display="none";
+var HelpZone = document.getElementById("HelpZone");
+HelpZone.style.display="none";
 }
 
 
