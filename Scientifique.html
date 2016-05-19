@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	
+	<head>
+		<title> Calculatrice Scientifique</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link href="Css/Scientifiques.css" rel="stylesheet" type="text/css"  media="screen"/>  <!-- On précise quel fichier contient le style utilisé dans la page (ici style.css)-->
+		<script type="text/javascript" src="Js/Scientifiques.js"> </script>
+	</head>
+	
+	<body>
+	<center>
+	<div id="menu">
+	<input type="button" id="Accueil" name="accueil.html" value="Accueil" onclick="self.location.href='accueil.html'" /> 
+	<input type="button" id="Scientifique" name="accueil.html" value="Scientifique" onclick="self.location.href='scientifique.html'" /> 
+	<input type="button" id="Periodique" name="accueil.html" value="Périodique" onclick="self.location.href='tableauperiodique.html'" />
+	<div>
+	
+	 
+	
+	<!-- Page d'aide --> 
+	
+	<div id="global">
+	<div id="HelpZone">
+	<h1> Quelques explications d'utilisation </h1>
+	 
+	<p>-Pour l'utilisation de la <b>puissance</b>, de symbole "^": <br>
+	afin d'écrire a^b il faut tout d'abord cliquer sur "^" <br>
+	puis entrer la valeur a, cliquer ensuite sur la virgule "," entrer la valeur de b et fermer la parenthèse. <br> 
+	-<b>Affich et Hide</b> permettent d'<b>afficher</b> ou de <b>masquer</b> le <b>graphique</b>. (hide masque aussi cette fenêtre) <br>
+	-Afin de <b>faire apparaître une courbe:</b> <br>
+	<b>Ecrire une fonction</b> ex: 4*x+5 , cliquer ensuite sur "trace" 
+	<b>Attention</b> il faut toujours indiquer les signes multiplier "*", même avant un x. 
+	</p>
+	
+	
+	
+	</div>
+	
+	<!-- Calculatrice -->	
+	
+	<div id="Tableau">
+	
+		
+	<table id="Corps">
+	
+	<tr>
+    <td colspan="9" class="affichage">
+    <input type="TEXT"   id="affichage" />
+    </td>
+    </tr>
+	
+	<!-- Ligne 1 -->
+	
+	<tr>
+	
+	<td>
+	<input type="button" class="graph" value="Affich" onClick="Affich()">
+	</td>
+	<td>
+	<input type="button" class="graph" value="Hide" onClick="Cacher()">
+	</td>
+	<td colspan="2" align="center">
+	<input type="button" class="Help" value="Explications" onClick="Help()">
+	</td>
+	
+	
+	<td>
+	<input type="button" class="Clear" value="Del" onClick="Suppr()">
+	</td>
+	<td>
+	<input type="button" class="Operateurs" value="(" onClick="Pouverte()">
+	</td>
+	<td>
+	<input type="button" class="Operateurs" value=")" onClick="Pfermee()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="/" onClick="Division()">
+	</td>
+	
+	</tr>
+	
+	<!-- Ligne 2 -->
+	
+	<tr>
+	
+	<td>
+	<input type="button"  class="graph" value="Trace" onclick="trace()" />
+	</td>
+	
+	<td>
+	<input type="button" class="Fonctions" value="Sin" onClick="Sin()">
+	</td>
+	
+	<td>
+	<input type="button" class="Fonctions" value="Cos" onClick="Cos()">
+	</td>
+	
+	<td>
+	<input type="button" class="Fonctions" value="Tan" onClick="Tan()">
+	</td>
+	
+	<td>
+	<input type="button" class="Nombres" value="7" onClick="sept()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="8" onClick="huit()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="9" onClick="neuf()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="x" onClick="multiplication()">
+	</td>
+	
+	</tr>
+	
+		<!-- Ligne 3 -->
+
+		<tr>
+		
+	<td>
+	<input type="button" Class="graph" value="X" onClick="inconnue()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="Sin-1" onClick="Arcsin()">
+ 	</td>
+	<td>
+	<input type="button" class="Fonctions" value="Cos-1" onClick="Arccos()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="Tan-1" onClick="Arctan()">
+	</td>
+	
+	<td>
+	<input type="button" class="Nombres" value="4" onClick="quatre()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="5" onClick="cinq()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="6" onClick="six()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="-" onClick="soustraction()">
+	</td>
+	
+	</tr>
+	
+	
+	<!-- Ligne 4 -->
+	
+	<tr>
+	
+	<td>
+	<input type="button" class="Fonctions" value="Log" onClick="Log()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="|x|" onClick="abs()">
+ 	</td>
+	<td>
+	<input type="button" class="Fonctions" value="√" onClick="Racine()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="℮" onClick="exp()">
+	</td>
+	
+	<td>
+	<input type="button" class="Nombres" value="1" onClick="un()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="2" onClick="deux()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="3" onClick="trois()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="+" onClick="addition()">
+	</td>
+	
+	</tr>
+	
+	<!-- Ligne 5 -->
+	
+	<tr>
+	
+	<td>
+	<input type="button" class="Fonctions" value="π" onClick="MathPi()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="10^" onClick="DixPow()">
+ 	</td>
+	<td>
+	<input type="button" class="Fonctions" value="^" onClick="Pow()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="," onClick="Vir()">
+	</td>
+	
+	<td>
+	<input type="button" class="Clear" value="C" onClick="C()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="0" onClick="zero()">
+	</td>
+	<td>
+	<input type="button" class="Operateurs" value="." onClick="Virgule()">
+	</td>
+	<td>
+	<input type="button" Class="Result" value="=" onClick="resultat()">
+	</td>
+	
+	</tr>
+	
+	
+	</table>
+	
+	</div>
+	
+	</div>
+	
+	
+	<!-- Calcul réel -->
+	
+	<div id="Calcul">
+	<input type="TEXT"   name="formule" Id="Calc" />
+	</div>
+	
+	
+	
+	<!-- Graphique --> 	
+    
+	<div id="Graph">
+			
+		
+	<p><canvas id="Graphe" width="800" height="400">
+	</canvas></p>
+
+	
+	</div>	
+
+	</body>
+	
+	
+</html>

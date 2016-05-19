@@ -1,0 +1,713 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	
+	<head>
+	 <link href="Css/tableauperiodique.css" rel="stylesheet" type="text/css"/>
+		<title> Tableau périodique </title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />  
+	<script type="text/javascript" src="Js/tableauperiodique.js"> </script>
+	
+	</head>
+	
+	<body>
+
+	<!-- Menu de changement de pages -->
+	
+	<center>
+	<div id="Switch">	
+<input type="button" id="Bouton1" name="accueil.html" value="Accueil" onclick="self.location.href='accueil.html'" /> 
+<input type="button" id="Bouton2" name="accueil.html" value="Scientifique" onclick="self.location.href='scientifique.html'" /> 
+<input type="button" id="Bouton3" name="accueil.html" value="Périodique" onclick="self.location.href='tableauperiodique.html'" /> 
+</div>
+</center>
+
+<!-- Menu d'aide -->
+
+	<div id="menu" >
+	<input type="Image" Class="boutonchimie" src="Img/Chimie.png" value= " " onclick="Aidechimie()" onmouseover="" >
+	<input type="Image" Class="boutonaide" src="Img/Aide.png" value= ""onclick="Help()" onmouseover="" >
+	<a href="#menu" class="ouvrir"> Aide </a>
+	<a href="#menufermer" class="fermer"> Fermer </a>
+	</div>
+
+	
+	<!-- Légende -->
+<div id="global">	
+<div id="legende" >
+<img id="affichage1" src="Img/legende1.png">	
+<img id="affichage2" src="Img/legende2.png">
+<img id="affichage3" src="Img/legende3.png">
+</div>
+	
+	<!-- Tableau du tableau périodique -->
+	
+	
+	<div id= "periodique">
+	
+	
+	<table>
+	
+	<tr> <!-- Nouvelle ligne -->
+	
+	<td>
+	<input type="button" Class="NonMetaux" value="H" onclick="hydrogenec()" onmouseover="hydrogene()" onmouseout="hydrogeneback()"> <!-- L'élement H est un bouton de la classe des "NonMetaux" --> 
+	</td>
+	
+	<td></td> <!-- Des cases vides sont crées pour créer un espace juusqu'à la fin de la colonne -->
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	
+	<td>
+	<input type="button" Class="Nobles" value="He" onclick="heliumc()" onmouseover="helium()" onmouseout="heliumback()">
+	</td>
+	</tr> <!--Fin de la ligne -->
+	
+	<tr>
+	
+	<td>
+	<input type="button" Class="Alcalins" value="Li" onclick="lithiumc()" onmouseover="lithium()" onmouseout="lithiumback()">
+	</td>
+	<td><input type="button" Class="Terreux" value="Be" onclick="beryliumc()" onmouseover="berylium()" onmouseout="beryliumback()"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>
+	<input type="button" Class="Metalloides" value="B" onclick="borec()" onmouseover="bore()" onmouseout="boreback()">
+	</td>
+	<td>
+	<input type="button" Class="NonMetaux" value="C" onclick="carbonec()" onmouseover="carbone()" onmouseout="carboneback()">
+	</td>
+	<td>
+	<input type="button" Class="NonMetaux" value="N" onclick="azotec()" onmouseover="azote()" onmouseout="azoteback()">
+	</td>
+	<td>
+	<input type="button" Class="NonMetaux" value="O" onclick="oxygenec()" onmouseover="oxygene()" onmouseout="oxygeneback()">
+	</td>
+	<td>
+	<input type="button" Class="Halogenes" value="F" onclick="fluorc()" onmouseover="fluor()" onmouseout="fluorback()">
+	</td>
+	<td>
+	<input type="button" Class="Nobles" value="Ne" onclick="neonc()" onmouseover="neon()" onmouseout="neonback()">
+	</td>	
+	
+	</tr>
+	
+	
+	
+		<tr>
+	
+	<td>
+	<input type="button" Class="Alcalins" value="Na" onclick="sodiumc()" onmouseover="sodium()" onmouseout="sodiumback()">
+	</td>
+	<td><input type="button" Class="Terreux" value="Mg" onclick="magnesiumc()" onmouseover="magnesium()" onmouseout="magnesiumback()"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>
+	<input type="button" Class="MPauvres" value="Al" onclick="aluminiumc()" onmouseover="aluminium()" onmouseout="aluminiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Metalloides" value="Si" onclick="silliciumc()" onmouseover="sillicium()" onmouseout="silliciumback()">
+	</td>
+	<td>
+	<input type="button" Class="NonMetaux" value="P" onclick="phosphorec()" onmouseover="phosphore()" onmouseout="phosphoreback()">
+	</td>
+	<td>
+	<input type="button" Class="NonMetaux" value="S" onclick="soufrec()" onmouseover="soufre()" onmouseout="soufreback()">
+	</td>
+	<td>
+	<input type="button" Class="Halogenes" value="Cl" onclick="chlorec()" onmouseover="chlore()" onmouseout="chloreback()">
+	</td>
+	<td>
+	<input type="button" Class="Nobles" value="Ar" onclick="argonc()" onmouseover="argon()" onmouseout="argonback()">
+	</td>	
+	
+	</tr>
+	
+	<td>
+	<input type="button" Class="Alcalins" value="K" onclick="potassiumc()" onmouseover="potassium()" onmouseout="potassiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Terreux" value="Ca" onclick="calciumc()" onmouseover="calcium()" onmouseout="calciumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Sc" onclick="scandiumc()" onmouseover="scandium()" onmouseout="scandiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Ti" onclick="titanec()" onmouseover="titane()" onmouseout="titaneback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="V" onclick="vanadiumc()" onmouseover="vanadium()" onmouseout="vanadiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Cr" onclick="chromec()" onmouseover="chrome()" onmouseout="chromeback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Mn" onclick="manganesec()" onmouseover="manganese()" onmouseout="manganeseback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Fe" onclick="fer()" onmouseover="fer()" onmouseout="fer()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Co" onclick="cobaltc()" onmouseover="cobalt()" onmouseout="cobaltback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Ni" onclick="nickelc()"onmouseover="nickel()" onmouseout="nickelback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Cu" onclick="cuivrec()" onmouseover="cuivre()" onmouseout="cuivreback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Zn" onclick="zincc()" onmouseover="zinc()" onmouseout="zincback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="Ga" onclick="galliumc()" onmouseover="gallium()" onmouseout="galliumback()">
+	</td>
+	<td>
+	<input type="button" Class="Metalloides" value="Ge" onclick="germaniumc()" onmouseover="germanium()" onmouseout="germaniumback()">
+	</td>
+	<td>
+	<input type="button" Class="Metalloides" value="As" onclick="arsenicc()" onmouseover="arsenic()" onmouseout="arsenicback()">
+	</td>
+	<td>
+	<input type="button" Class="NonMetaux" value="Se" onclick="seleniumc()" onmouseover="selenium()" onmouseout="seleniumback()">
+	</td>
+	<td>
+	<input type="button" Class="Halogenes" value="Br" onclick="bromec()" onmouseover="brome()" onmouseout="bromeback()">
+	</td>
+	<td>
+	<input type="button" Class="Nobles" value="Kr" onclick="kryptonc()" onmouseover="krypton()" onmouseout="kryptonback()">
+	</td>
+	
+	<tr>
+	<td>
+	<input type="button" Class="Alcalins" value="Rb" onclick="rubidiumc()" onmouseover="rubidium()" onmouseout="rubidiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Terreux" value="Sr" onclick="strontiumc()" onmouseover="strontium()" onmouseout="strontiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Y" onclick="yttriumc()" onmouseover="yttrium()" onmouseout="yttriumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Zr" onclick="zirconiumc()" onmouseover="zirconium()" onmouseout="zirconiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Nb" onclick="niobiumc()" onmouseover="niobium()" onmouseout="niobiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Mo" onclick="molybdenec()" onmouseover="molybdene()" onmouseout="molybdene()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Tc" onclick="technetiumc()" onmouseover="technetium()" onmouseout="technetiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Ru" onclick="rutheniumc()" onmouseover="ruthenium()" onmouseout="rutheniumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Rh" onclick="rhodiumc()" onmouseover="rhodium()" onmouseout="rhodiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Pd" onclick="palladiumc()" onmouseover="palladium()" onmouseout="palladiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Ag" onclick="argentc()" onmouseover="argent()" onmouseout="argentback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Cd" onclick="cadmiumc()" onmouseover="cadmium()" onmouseout="cadmiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="In" onclick="indiumc()" onmouseover="indium()" onmouseout="indiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="Sn" onclick="etainc()" onmouseover="etain()" onmouseout="etainback()">
+	</td>
+	<td>
+	<input type="button" Class="Metalloides" value="Sb" onclick="antimoinec()" onmouseover="antimoine()" onmouseout="antimoineback()">
+	</td>
+	<td>
+	<input type="button" Class="Metalloides" value="Te" onclick="tellurec()" onmouseover="tellure()" onmouseout="tellureback()">
+	</td>
+	<td>
+	<input type="button" Class="Halogenes" value="I" onclick="iodec()" onmouseover="iode()" onmouseout="iodeback()">
+	</td>
+	<td>
+	<input type="button" Class="Nobles" value="Xe" onclick="xenonc()" onmouseover="xenon()" onmouseout="xenonback()">
+	</td>
+	
+	</tr>
+	
+	
+	<tr>
+	<td>
+	<input type="button" Class="Alcalins" value="Cs" onclick="cesiumc()" onmouseover="cesium()" onmouseout="cesiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Terreux" value="Ba" onclick="baryumc()" onmouseover="baryum()" onmouseout="baryumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="La" onclick="lanthanec()" onmouseover="lanthane()" onmouseout="lanthaneback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Hf" onclick="hafniumc()" onmouseover="hafnium()" onmouseout="hafniumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Ta" onclick="tantalec()" onmouseover="tantale()" onmouseout="tantaleback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="W" onclick="tungstenec()" onmouseover="tungstene()" onmouseout="tungsteneback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Re" onclick="rheniumc()" onmouseover="rhenium()" onmouseout="rheniumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Os" onclick="osmiumc()" onmouseover="osmium()" onmouseout="osmiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Ir" onclick="iridiumc()" onmouseover="iridium()" onmouseout="iridiumback()">
+	<td>
+	<input type="button" Class="MTransition" value="Pt" onclick="platinec()" onmouseover="platine()" onmouseout="platineback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Au" onclick="orc()" onmouseover="or()" onmouseout="orback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Hg" onclick="mercurec()" onmouseover="mercure()" onmouseout="mercureback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="Tl" onclick="thalliumc()" onmouseover="thallium()" onmouseout="thalliumback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="Pb" onclick="plombc()" onmouseover="plomb()" onmouseout="plombback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="Bi" onclick="bismuthc()" onmouseover="bismuth()" onmouseout="bismuthback()">
+	</td>
+	<td>
+	<input type="button" Class="Metalloides" value="Po" onclick="poloniumc()" onmouseover="polonium()" onmouseout="poloniumback()">
+	</td>
+	<td>
+	<input type="button" Class="Halogenes" value="At" onclick="astatec()" onmouseover="astate()" onmouseout="astateback()">
+	</td>
+	<td>
+	<input type="button" Class="Nobles" value="Rn" onclick="radonc()" onmouseover="radon()" onmouseout="radonback()">
+	</td>
+	</tr>
+		
+		
+	<tr>
+	<td>
+	<input type="button" Class="Alcalins" value="Fr" onclick="franciumc()" onmouseover="francium()" onmouseout="franciumback()">
+	</td>
+	<td>
+	<input type="button" Class="Terreux" value="Ra" onclick="radiumc()" onmouseover="radium()" onmouseout="radiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Ac" onclick="actiniumc()" onmouseover="actinium()" onmouseout="actiniumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Rf" onclick="rutherfordiumc()" onmouseover="rutherfordium()" onmouseout="rutherfordiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Db" onclick="dubniumc()" onmouseover="dubnium()" onmouseout="dubniumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Sg" onclick="seaborgiumc()" onmouseover="seaborgium()" onmouseout="seaborgiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Bh" onclick="bohriumc()" onmouseover="bohrium()" onmouseout="bohriumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Hs" onclick="hassiumc()" onmouseover="hassium()" onmouseout="hassiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Mt" onclick="meitneriumc()" onmouseover="meitnerium()" onmouseout="meitneriumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Ds" onclick="darmstadtiumc()" onmouseover="darmstadtium()" onmouseout="darmstadtiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Rg" onclick="roentgeniumc()" onmouseover="roentgenium()" onmouseout="roentgeniumback()">
+	</td>
+	<td>
+	<input type="button" Class="MTransition" value="Cn" onclick="copemiciumc()" onmouseover="copemicium()" onmouseout="copemiciumback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="Uut" onclick="ununtriumc()" onmouseover="ununtrium()" onmouseout="ununtriumback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="Fl" onclick="fleroviumc()" onmouseover="flerovium()" onmouseout="fleroviumback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="Uup" onclick="ununpentiumc()" onmouseover="ununpentium()" onmouseout="ununpentiumback()">
+	</td>
+	<td>
+	<input type="button" Class="MPauvres" value="Lv" onclick="livermoriumc()" onmouseover="livermorium()" onmouseout="livermoriumback()">
+	</td>
+	<td>
+	<input type="button" Class="Halogenes" value="Uus" onclick="ununseptiumc()" onmouseover="ununseptium()" onmouseout="ununseptiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Nobles" value="Uuo" onclick="ununoctiumc()" onmouseover="ununoctium()" onmouseout="ununoctiumback()">
+	</td>
+	</tr>
+	
+	<tr>
+	
+	<td>
+	</td>
+	
+	</tr>
+	
+	
+	<tr>
+	<td>
+	
+	</td>
+	<td>
+	
+	</td>
+	<td>
+	
+	</td>
+	
+	<td>
+	<input type="button" Class="Lanthanides" value="Ce" onclick="ceriumc()" onmouseover="cerium()" onmouseout="ceriumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Pr" onclick="praseodymec()" onmouseover="praseodyme()" onmouseout="praseodymeback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Nd" onclick="neodymec()" onmouseover="neodyme()" onmouseout="neodymeback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Pm" onclick="promethiumc()" onmouseover="promethium()" onmouseout="promethiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Sm" onclick="samariumc()" onmouseover="samarium()" onmouseout="samariumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Eu" onclick="europiumc()" onmouseover="europium()" onmouseout="europiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Gd" onclick="gadoliniumc()" onmouseover="gadolinium()" onmouseout="gadoliniumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Tb" onclick="terbiumc()" onmouseover="terbium()" onmouseout="terbiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Dy" onclick="dysprosiumc()" onmouseover="dysprosium()" onmouseout="dysprosiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Ho" onclick="holmiumc()" onmouseover="holmium()" onmouseout="holmiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Er" onclick="erbiumc()" onmouseover="erbium()" onmouseout="erbiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Tm" onclick="thuliumc()" onmouseover="thulium()" onmouseout="thuliumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Yb" onclick="ytterbiumc()" onmouseover="ytterbium()" onmouseout="ytterbiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Lanthanides" value="Lu" onclick="lutetiumc()" onmouseover="lutetium()" onmouseout="lutetiumback()">
+	</td>
+	</tr>
+	
+	
+	<tr>
+	<td>
+	
+	</td>
+	<td>
+	
+	</td>
+	<td>
+	
+	</td>
+	
+	<td>
+	<input type="button" Class="Actinides" value="Th"onclick="thoriumc()" onmouseover="thorium()" onmouseout="thoriumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Pa" onclick="protactiniumc()" onmouseover="protactinium()" onmouseout="protactiniumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="U" onclick="uraniumc()" onmouseover="uranium()" onmouseout="uraniumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Np" onclick="neptuniumc()" onmouseover="neptunium()" onmouseout="neptuniumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Pu" onclick="plutoniumc()" onmouseover="plutonium()" onmouseout="plutoniumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Am" onclick="americumc()" onmouseover="americum()" onmouseout="americumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Cm" onclick="curiumc()" onmouseover="curium()" onmouseout="curiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Bk" onclick="berkeliumc()" onmouseover="berkelium()" onmouseout="berkeliumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Cf" onclick="californiumc()" onmouseover="californium()" onmouseout="californiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Es" onclick="einsteiniumc()" onmouseover="einsteinium()" onmouseout="einsteiniumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Fm" onclick="fermiumc()" onmouseover="fermium()" onmouseout="fermiumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Md" onclick="mendeleviumc()" onmouseover="mendelevium()" onmouseout="mendeleviumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="No" onclick="nobeliumc()" onmouseover="nobelium()" onmouseout="nobeliumback()">
+	</td>
+	<td>
+	<input type="button" Class="Actinides" value="Lr" onclick="lawrenciumc()" onmouseover="lawrencium()" onmouseout="lawrenciumback()">
+	</td>
+	</tr>
+	
+	
+
+	
+     </table>
+
+	 </div>
+	
+ 
+ 
+	<!-- Aide -->
+	
+	<div id="HelpZone">
+	
+	<h1>Quelques indications <input type="image" class="kik" src="Img/Exit.png" value= "" onclick= "Close()"></h1> <!-- Le bouton ferme le volet d'aide grâce au onclick -->
+	<p> 
+	Ce tableau périodique permet d’obtenir des informations sur les éléments en passant simplement sa souris dessus. 
+	La calculatrice à droite permet quant à elle, de réaliser bien entendu des calculs basiques, mais aussi des formules de chimie.
+	Pour cela il suffit de cliquer sur l’élément du tableau, sa masse molaire apparaît alors dans le cadre de la calculatrice. 
+	La calculatrice dispose aussi d’une touche « Na » pour nombre d’Avogadro pour des formules de chimie. 
+	Les formules de chimie sont disponibles en cliquant sur le bouton 
+		<input type="Image" Class="boutonchimie" src="Img/Chimie.png" value= ""onclick="Aidechimie()"  >
+	
+	
+	
+	</p>
+	
+	
+	</div>
+	
+ <div id="Chimie">
+	
+	<h1>Formules de chimie : <input type="image" class="kik" src="Img/Exit.png" value= "" onclick= "Close()"></h1>  <!-- Le bouton ferme le volet de chimie grâce au onclick -->
+	<p> 
+	QUANTITE DE MATIERE :  </p> <p>
+n = N/NA
+n = m/M </p>
+<P>
+Avec :
+</p> <p> n : nombre de moles ( en mol ) d'atomes; m : masse des entités ( en g ); 
+M : masse molaire ( en g.mol-1 ) de l'atome ; 
+N : nombre d’atomes ou molécules (sans unité) </p>
+<p>
+CONCENTRATION : </p>
+<p> C = n / V </p> <p>
+
+LOI D’AVOGADRO : </p>
+<p>
+P.V = n.R.T </p>
+<p>
+Avec : </p> <p>
+ R : constante des gaz parfaits = Na.K = 8,314; n : quantité de matière ( mol ) ; V : volume occupé par le gaz ( m3 ) ; P : pression du gaz ( Pa ) ; T : température ( K ) 
+	</p>
+	
+	</div>
+ 
+ 
+	<!-- Calculatrice -->
+	
+	
+	
+	<div id="Tableau">
+	
+	<table id="Corps">
+	
+	<tr>
+    <td colspan="4" class="affichage"> <!-- La zone de texte fait partie du tableau de largeur 4 colonnes -->
+    <input type="TEXT"   id="affichage" /> <!-- La barre de text de la calculatrice -->
+    </td>
+    </tr>
+	
+	
+	
+	
+	<tr> 
+	
+	<td>
+	<input type="button" class="Fonctions" value="π" onClick="MathPi()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="10^" onClick="DixPow()">
+ 	</td>
+	<td>
+	<input type="button" class="Fonctions" value="^" onClick="Pow()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="," onClick="Vir()">
+	</td>
+	
+	</tr>
+	
+	<!-- Fonctions Log, valeur absolue, racine et exponentielle -->
+  
+  	<tr>
+	
+	<td>
+	<input type="button" class="Fonctions" value="Log" onClick="Log()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="Na" onClick="Na()">
+ 	</td>
+	<td>
+	<input type="button" class="Fonctions" value="√" onClick="Racine()">
+	</td>
+	<td>
+	<input type="button" class="Fonctions" value="℮" onClick="exp()">
+	</td>
+	
+	</tr>
+  
+  
+    <!-- Parenthèses et division -->
+	
+	<tr> 
+	
+	<td>
+	<input type="button" class="Operateurs" value="Del" onClick="Suppr()">
+	</td>
+	<td>
+	<input type="button" class="Operateurs" value="(" onClick="Pouverte()">
+	</td>
+	<td>
+	<input type="button" class="Operateurs" value=")" onClick="Pfermee()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="/" onClick="Division()">
+	</td>
+	
+	</tr>
+	
+  <!--  Première ligne de nombres et multiplication -->
+	<tr>
+	
+	<td> 
+	<input type="button" class="Nombres" value="7" onClick="sept()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="8" onClick="huit()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="9" onClick="neuf()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="x" onClick="multiplication()">
+	</td>
+	
+	</tr>
+	
+	
+	<!-- Seconde ligne de nombres et soustraction -->
+	<tr>
+	
+	<td> 
+	<input type="button" class="Nombres" value="4" onClick="quatre()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="5" onClick="cinq()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="6" onClick="six()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="-" onClick="soustraction()">
+	</td>
+
+	</tr>
+	
+	
+	<!--Troisième ligne de nombres et addition-->
+	<tr>
+	<td>
+	<input type="button" class="Nombres" value="1" onClick="un()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="2" onClick="deux()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="3" onClick="trois()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="+" onClick="addition()">
+	</td>
+
+	</tr>
+	
+	
+	<!-- Zéro et signe égal -->
+<tr> 
+	<td>
+	<input type="button" class="Operateurs" value="C" onClick="C()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="0" onClick="zero()">
+	</td>
+	<td>
+	<input type="button" class="Operateurs" value="." onClick="Virgule()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="=" onClick="resultat()">
+	</td>
+
+	</tr>
+	
+</table>
+	
+	</div>
+	</div>
+<div id="Calcul">
+	<input type="TEXT"   id="Calc"/>
+	</div>
+	
+	</html>

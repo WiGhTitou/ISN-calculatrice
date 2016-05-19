@@ -1,0 +1,420 @@
+html {
+color:black;
+background-color: #454545;
+
+}
+
+
+
+#Bouton1 {
+
+	 
+	padding: 1% 0% 1% 0%;
+	font-weight:Bold;
+	font-size: 85% ;
+	font-family:Arial;
+	text-align:center;
+	background:#d34836;
+	color:#fff;
+	width:10%;
+	border-radius:2px;
+	border:none;
+	margin-top : 2%;
+	
+	
+}
+
+#Bouton2 {
+	
+	padding: 1% 0% 1% 0%;
+	font-weight:Bold;
+	font-size: 85% ;
+	font-family:Arial;
+	background :#3A7CEC;
+	color:#fff;
+	width:10%;
+	border-radius:2px;
+	border:none;
+}
+
+#Bouton3 {
+
+	padding: 1% 0% 1% 0%;
+	font-weight:Bold;
+	font-size: 85% ;
+	font-family:Arial;
+	background:#2CA24C;
+	color:#fff;
+	width : 10%;
+	border-radius:2px;
+	border:none;
+}
+
+#menu {
+    position : absolute;
+    width: 37px;
+	margin-top : 10%;
+	margin-left : -0.7%;
+    padding: 25px 17px;
+    background: #9CD2EA; 
+	box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+	color: black;
+    left: -72px; 
+
+    transition: all .5s ease-in;
+	}
+	
+#menu a.ouvrir
+{
+	position: absolute;
+    left: 80%;
+    top: 21.6%;
+   
+    background: #555;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+	-ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+	border-radius : 5px;
+    padding: 10px 21.5px;
+	opacity : 0.8;
+}
+ #menu a.fermer {
+    display: none; 
+	position: absolute;
+    left: 80%;
+    top: 21.6%;
+    background: #555;
+    color: #fff;
+    text-decoration: none;
+ 
+    -ms-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+border-radius : 5px;
+    padding: 10px 14.3px;
+opacity : 0.8;
+ }
+ 
+#menu:target {
+    left: -0.4%; 
+}
+
+#menu:target a.ouvrir {
+    display: none;
+}
+#menu:target a.fermer {
+    display: block;
+}
+
+.kik{
+
+margin-top: -15%;
+margin-left: 90%;
+width : 40px;
+height : 40px;
+border-radius :50px;
+text-decoration : none;
+
+}
+.boutonchimie {
+
+width : 50px;
+height : 50px;
+border-radius :50px;
+text-decoration : none;
+
+ }
+ 
+.boutonaide {
+
+width : 50px;
+height : 50px;
+margin-top : 30%;
+border-radius:50px;
+text-decoration:none;
+
+}
+.Alcalins{
+
+Border-radius: 1px;
+Background-color: #69FEFC;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.Terreux{
+
+Border-radius: 1px;
+Background-color: #69FEFC;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.Halogenes{
+
+Border-radius: 1px;
+Background-color: #FFFD4D;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.Nobles{
+
+Border-radius: 1px;
+Background-color: #80BCFA;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.Lanthanides{
+
+Border-radius: 1px;
+Background-color: #FF9350;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.Actinides{
+
+Border-radius: 1px;
+Background-color: #FE76B6;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.MTransition{
+
+Border-radius: 1px;
+Background-color: #61F49B;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.MPauvres{
+
+Border-radius: 1px;
+Background-color: #C8CB96;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.Metalloides{
+
+Border-radius: 1px;
+Background-color: #FFB0FF;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.NonMetaux{
+
+Border-radius: 1px;
+Background-color: #FFA5A4;
+Height: 45px;
+Width: 45px;
+border : none;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.Nombres {
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#66CDAA;
+border-radius: 5px;
+Height: 45px;
+Width: 45px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.Operateurs {
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#2A99E3 ;
+border-radius: 5px;
+Height: 45px;
+Width: 45px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.Fonctions {
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#F4A460;
+border-radius: 5px;
+Height: 45px;
+Width: 45px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.affichage{
+
+        height:50px;
+        padding-left:5px;
+		padding-right : 15px;
+        padding-bottom:5px;
+		padding-top : 5px;
+
+		
+}
+  
+#Carré{
+
+font-style: italic;
+
+
+}
+
+#legende{
+
+
+margin-top : 4%;
+margin-left :18%;
+
+}
+
+#periodique{
+
+float:left;
+margin-top:-10%;
+margin-left:7%;
+
+}
+
+#Tableau{
+
+position: absolute;
+float:right;
+margin-top: -10%;
+margin-left: 80%;
+Width: 22%;
+
+}
+
+
+#affichage{
+
+Width: 100%;
+text-align:right;
+box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+
+
+}
+
+
+#Corps {
+
+
+text-align:center;
+Width: 85%;
+padding-left:3%;
+padding-right : 3%;
+padding-bottom:5%;
+	background: #9dd2ea;
+	border-radius: 3px;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+		
+}
+
+#Calcul{
+display: none;
+}
+
+
+/* Zone d'aide */
+
+#HelpZone {
+
+	display:none;
+	text-align:center;
+	position: absolute;
+	padding: 0% 0% 1% 0%;
+	background-color:#ACAFAF;
+    width:20%;	
+	margin-top:-11%;
+	margin-left:78%;
+	box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.6);
+	visibility: visible ;
+	transition: all.5s ease-in;
+}
+#HelpZone h1 {
+	font-family:verdana;
+    padding:1%;
+	font-variant:small-caps;
+    font-size:110%;
+    color:black;
+}
+  
+#HelpZone p{
+	font-family:arial;
+	color:black;
+	text-align: center;
+	margin-left : 10%;
+	margin-right : 10%;
+}
+
+#Chimie {
+
+	display:none;
+	text-align:center;
+	position: absolute;
+	padding: 0% 0% 1% 0%;
+	background-color:#ACAFAF;
+    width:20%;	
+	margin-top:-11%;
+	margin-left:78%;
+	box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.6);
+	visibility: visible ;
+	transition: all.5s ease-in;
+}
+#Chimie h1 {
+	font-family:verdana;
+    padding:1%;
+	font-variant:small-caps;
+    font-size:110%;
+    color:black;
+}
+  
+#Chimie p{
+	font-family:arial;
+	color:black;
+	text-align: center;
+	margin-left : 10%;
+	margin-right : 10%;
+}

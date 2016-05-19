@@ -1,0 +1,261 @@
+html {
+
+background-color: #454545;
+
+}
+
+
+/* Menu */
+
+
+
+
+#Accueil {
+
+	padding: 1% 0% 1% 0%;
+	font-weight:Bold;
+	font-size: 85% ;
+	font-family:Arial;
+	text-align:center;	
+	background:#d34836;
+	color:#fff;
+	width:10%;
+	border-radius:2px;
+	border:none;
+	margin-top: 2%;
+	
+	
+}
+
+#Scientifique {
+	
+	padding: 1% 0% 1% 0%;
+	font-weight:Bold;
+	font-size: 85% ;
+	font-family:Arial;
+	background :#3A7CEC;
+	color:#fff;
+	width:10%;
+	border-radius:2px;
+	border:none;
+}
+
+#Periodique {
+	padding: 1% 0% 1% 0%;
+	font-weight:Bold;
+	font-size: 85% ;
+	font-family:Arial;
+	background:#2CA24C;
+	color:#fff;
+	width : 10%;
+	border-radius:2px;
+	border:none;
+}
+
+
+/* Calculatrice */
+
+.Nombres {
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#404040;
+border-radius: 2px;
+Height: 34px;
+Width: 50px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.Operateurs {
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#161616 ;
+border-radius: 2px;
+Height: 34px;
+Width: 50px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.Clear{
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#B96302 ;
+border-radius: 2px;
+Height: 34px;
+Width: 50px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.Result{
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#039A35 ;
+border-radius: 2px;
+Height: 34px;
+Width: 50px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.Fonctions {
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#00609F;
+border-radius: 2px;
+Height: 34px;
+Width: 50px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.Help {
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#D51601;
+border-radius: 2px;
+Height: 34px;
+Width: 100px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.affichage{
+
+        height:50px;
+        padding-left:5px;
+		padding-right : 15px;
+        padding-bottom:5px;
+		padding-top : 5px;
+	
+}
+
+
+
+.graph {
+
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#030940;
+border-radius: 2px;
+Height: 34px;
+Width: 50px;
+box-shadow: inset 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Zone d'aide */
+
+#HelpZone {
+	
+	padding: 0% 0% 1% 0%;
+	background-color:#ACAFAF;
+    width:40%;	
+	float:left;
+	margin-top:0%;
+	margin-left:-40%;
+	box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.6);
+	visibility: hidden ;
+	transition: all.5s ease-in;
+}
+#HelpZone h1 {
+	font-family:verdana;
+    padding:1%;
+	font-variant:small-caps;
+    font-size:110%;
+    color:black;
+}
+  
+#HelpZone p{
+	font-family:arial;
+	color:black;
+	text-align: center;
+	margin-left : 10%;
+	margin-right : 10%;
+}
+
+
+#Carré{
+
+font-style: italic;
+
+
+}
+
+/* Calculatrice:
+   -global */
+ 
+#Tableau{
+
+margin-top: 4%;
+transition: all.5s ease-in;
+	
+}
+
+/* -Ecran */
+
+#affichage{
+
+Width: 405px;
+height:25px;
+text-align:right;
+box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+
+
+}
+
+/* -Fond */
+
+#Corps {
+margin : auto;
+Height: 300px;
+Width: 220px;
+padding-left:20px;
+padding-right : 10px;
+padding-bottom:30px;
+	background: linear-gradient(#5F6061 45%, #1B1B1C);
+	border-radius: 3px;
+	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+		
+}
+
+/* Calcul réel*/
+
+#Calcul{
+display: none;
+}
+
+
+/* Graphique : 
+-Global*/
+
+
+#Graph {
+
+transition: all.5s ease-in;
+display:none;
+text-align: center;
+
+}
+
+/* -Canvas */
+
+#Graphe{
+border:1px solid;
+background-color:#FFFFFF;
+text-align:center;
+}

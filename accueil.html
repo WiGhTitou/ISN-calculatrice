@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="Css/accueil.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="Js/Calculatrice.js"> </script>
+		
+		<title> Différentes Calculatrices </title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />	
+		
+		
+	</head>
+	<body> 
+	
+	<center>
+	<div id="Switch">	
+<input type="button" id="Bouton1" name="accueil.html" value="Accueil" onclick="self.location.href='accueil.html'" /> 
+<input type="button" id="Bouton2" name="accueil.html" value="Scientifique" onclick="self.location.href='scientifique.html'" /> 
+<input type="button" id="Bouton3" name="accueil.html" value="Périodique" onclick="self.location.href='tableauperiodique.html'" /> 
+</div>
+</center>
+<!--1er bloc avec explications-->
+
+
+<div id="bloc1">
+    <h1>Différentes calculatrices en ligne</h1>
+	<p>Une calculatrice, l'outil de calcul polyvalent et efficace qu'on utilise
+	tous les jours!  
+	Nous vous présentons sur ce site plusieurs calculatrices
+	avec leurs spécificités et leurs différentes fonctions de calculs. 
+	Vous pourrez les utiliser facilement avec pour vous aider une petit aide sur le côté vous expliquant 
+	toutes les fonctionnalités réunis sur chacune de ces calculatrices. 
+	Ces calculatrices sont toutes simples pour vos opérations mathématiques ordinaires mais aussi bien
+	pour calculer des angles, la masse molaire d'un atome,etc.</p>
+
+	<p>Aussi simple de fonctionnement qu'une calculette de bureau, 
+	elles présentent au moins l'avantage de ne pas y occuper <br>l'espace alors
+	laissez-vous tenter !</p>
+
+	
+	</div>
+	
+<!--2eme bloc avec calculatrice-->
+	
+<div id="bloc2"> 
+<h1>La calculatrice Basique</h1>
+
+<!--LA CALCULATRICE BASIQUE -->
+
+	<div id="Tableau">
+	
+	</table>
+	
+	<table id="Corps">
+	
+	<tr>
+    <td colspan="4" class="affichage">
+    <input type="TEXT"   id="affichage"  />
+    </td>
+    </tr>
+	
+    <!-- Parenthèses, del et division -->
+	
+	<tr>
+	
+	<td>
+	<input type="button" class="Operateurs1" value="Del" onClick="Suppr()">
+	</td>
+	<td>
+	<input type="button" class="Operateurs1" value="(" onClick="Pouverte()">
+	</td>
+	<td>
+	<input type="button" class="Operateurs1" value=")" onClick="Pfermee()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs1" value="/" onClick="Division()">
+	</td>
+	
+	</tr>
+	
+   <!-- Première ligne de nombres et multiplication -->
+	<tr>
+	
+	<td>
+	<input type="button" class="Nombres" value="7" onClick="sept()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="8" onClick="huit()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="9" onClick="neuf()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="x" onClick="multiplication()">
+	</td>
+	
+	</tr>
+	
+	
+	<!-- Seconde ligne de nombres et soustraction -->
+	<tr>
+	
+	<td>
+	<input type="button" class="Nombres" value="4" onClick="quatre()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="5" onClick="cinq()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="6" onClick="six()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="-" onClick="soustraction()">
+	</td>
+
+	</tr>
+	
+	
+	<!-- Troisième ligne de nombres et addition -->
+	<tr>
+	<td>
+	<input type="button" class="Nombres" value="1" onClick="un()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="2" onClick="deux()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="3" onClick="trois()">
+	</td>
+	<td>
+	<input type="button" Class="Operateurs" value="+" onClick="addition()">
+	</td>
+
+	</tr>
+	
+	
+	<!-- Zéro, clear, virgule et signe égal -->
+		<tr>
+	<td>
+	<input type="button" class="C" value="C" onClick="C()">
+	</td>
+	<td>
+	<input type="button" class="Nombres" value="0" onClick="zero()">
+	</td>
+	<td>
+	<input type="button" class="Operateurs" value="." onClick="Virgule()">
+	</td>
+	<td>
+	<input type="button" Class="resultat" value="=" onClick="resultat()">
+	</td>
+
+	</tr>
+	
+	</table>
+	
+	</div>
+	
+	<div id="Calcul">
+	<input type="TEXT"   id="Calc"/>
+	</div>
+
+
+</div>
+	
+
+</body>
+
+</html>

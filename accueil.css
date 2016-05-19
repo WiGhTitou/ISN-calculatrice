@@ -1,0 +1,207 @@
+html {
+background-color: #454545;
+}
+	
+
+#Bouton1 {
+
+	 
+	padding: 1% 0% 1% 0%;
+	font-weight:Bold;
+	font-size: 85% ;
+	font-family:Arial;
+	text-align:center;
+	background:#d34836;
+	color:#fff;
+	width:10%;
+	border-radius:2px;
+	border:none;
+	margin-top : 2%;
+	
+	
+}
+
+#Bouton2 {
+	
+	padding: 1% 0% 1% 0%;
+	font-weight:Bold;
+	font-size: 85% ;
+	font-family:Arial;
+	background :#3A7CEC;
+	color:#fff;
+	width:10%;
+	border-radius:2px;
+	border:none;
+}
+
+#Bouton3 {
+
+	padding: 1% 0% 1% 0%;
+	font-weight:Bold;
+	font-size: 85% ;
+	font-family:Arial;
+	background:#2CA24C;
+	color:#fff;
+	width : 10%;
+	border-radius:2px;
+	border:none;
+}	
+	
+	
+	
+#bloc1 {
+
+	text-align:center;
+	background-color:#ACAFAF;
+    width:50%;
+	float:left;
+	margin-top:4%;
+	margin-left: 4%;
+	box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.6);
+}
+#bloc1 h1 {
+	font-family:verdana;
+    padding:1%;
+	font-variant:small-caps;
+    font-size:110%;
+    color:black;
+}
+  
+#bloc1 p{
+	font-family:arial;
+	color:black;
+	text-align: center;
+	margin-left : 10%;
+	margin-right : 10%;
+}
+
+#bloc2 {
+
+	text-align:center;
+	padding: 0% 0% 2% 0%;
+	background-color:#ACAFAF;
+	width:35%;
+	height:30%;
+	float:right;
+	margin-top:4%;
+	margin-right:4%;
+	font-family:verdana;
+	font-variant:small-caps;
+    font-size:60%;
+    color:black;
+	box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.6);
+}
+
+  
+
+
+
+
+.Nombres {
+
+border : none;
+font-weight:bold;
+color :#ffffff;
+background-color:#5E5E5E;
+Height: 55px;
+Width: 65px;
+
+
+}
+.Operateurs1 {
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#2A96F0;
+Height: 55px;
+Width: 65px;
+
+}
+
+.Operateurs {
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#5E5E5E;
+Height: 55px;
+Width: 65px;
+
+}
+
+
+.Fonctions {
+border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#F4A460;
+Height: 55px;
+Width: 65px;
+
+}
+
+
+.C { border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#FF923F;
+Height: 55px;
+Width: 65px;
+
+}
+
+.resultat { border : none;
+font-weight:bold;
+color :#FFFFFF;
+background-color:#129B49;
+Height: 55px;
+Width: 65px;
+
+}
+
+.affichage{
+
+        height:50px;
+        padding-left:5px;
+		padding-right : 15px;
+        padding-bottom:5px;
+		padding-top : 5px;
+
+		
+}
+
+
+#affichage{
+
+Width: 100%;
+height:50%;
+text-align:right;
+box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+#tableau{
+
+padding-bottom: 2%;
+
+}
+
+#Corps {
+margin : auto;
+Height: 40%;
+Width: 320px;
+padding-left:20px;
+padding-right : 20px;
+padding-bottom:5%;
+background: #282828;
+margin-top:2%;	
+	
+		
+}
+
+#Calcul{
+display: none;
+}
+
+
+
+
